@@ -1,7 +1,7 @@
 /******************
-Name: Moar Shvartz
+Name: Maor Shvartz
 ID: 216763235
-Assignment:
+Assignment:ex1
 *******************/
 #include <stdio.h>
 
@@ -20,7 +20,7 @@ int main()
     printf("0 for even, 1 for odd: %d\n",a);
 
     // 2's complement and other representations
-    printf("\n2’s Complement to Other Representations:\n");
+    printf("\n2’s Complement to other representations:\n");
     int c;
     printf("Please enter a negative integer \n");
     scanf("%d", &c);
@@ -28,7 +28,7 @@ int main()
     printf("unsigned: %u", c);
 
     // Shifting right and left
-    printf("\nShifting Right and Left:\n");
+    printf("\nShifting right and left:\n");
     int n,right,left;
     printf("Please enter 3 integers \n");
     scanf("%d%d%d", &n, &right, &left);
@@ -46,6 +46,7 @@ int main()
     // Different Bases
     printf("\nDifferent Bases:\n");
     int octa,hexad;
+    printf("Please enter two numbers in octal and hexadecimal bases\n");
     scanf("%o%x", &octa, &hexad);
     printf("LSBs: %d %d\n", (octa& 1 ), (hexad & 1) ); // if even then lsb is 0, else 1
     printf("MSBs: %d %d\n", ((octa >> 31) & 1), ((hexad >> 31) & 1) ); // number is 32 bits, we shift 31 to get last one
